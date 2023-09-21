@@ -1,0 +1,17 @@
+{
+  "menus": {},
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "etc-hooks",
+  "mode": "doc",
+  "repository": {
+    "url": "",
+    "branch": "master"
+  },
+  "theme": {}
+}
