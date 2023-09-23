@@ -5,6 +5,7 @@ export default {
   history: {
     type: 'hash',
   },
+  publicPath: '/etc-hooks/',
   extraBabelPlugins: [
     [
       'babel-plugin-import',
@@ -15,6 +16,19 @@ export default {
       'fusion',
     ],
   ],
+  logo: '/etc-hooks/short-logo.png',
   mode: 'site',
   title: 'Etc hooks',
+  alias: {
+    etcHooks: process.cwd() + '/packages/hooks/src/index.ts',
+    ['etc-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
+  },
+  resolve: {
+    includes: ['packages/hooks/src', 'docs'],
+  },
+  navs: [
+    { title: '指南', path: '/guide' },
+    { title: 'Hooks', path: '/hooks' },
+    { title: 'GitHub', path: 'https://github.com/AmbitionsXXXV/etc-hooks' },
+  ],
 }
