@@ -57,7 +57,7 @@ export function getRoutes() {
     "path": "/",
     "wrappers": [require('../dumi/layout').default, require('/Users/jiantianjianghui/Web_Project/etc-hooks/node_modules/.pnpm/dumi-theme-default@1.1.24_@umijs+preset-dumi@1.1.53_react-dom@18.2.0_react@18.2.0/node_modules/dumi-theme-default/es/layout.js').default],
     "routes": [],
-    "title": "etc-hooks",
+    "title": "Etc hooks",
     "component": (props) => props.children
   }
 ];

@@ -7,8 +7,8 @@
     }
   ],
   "navs": {},
-  "title": "etc-hooks",
-  "mode": "doc",
+  "title": "Etc hooks",
+  "mode": "site",
   "repository": {
     "url": "",
     "branch": "master"

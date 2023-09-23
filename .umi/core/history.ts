@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory, History } from '/Users/jiantianjianghui/Web_Project/etc-hooks/node_modules/.pnpm/@umijs+runtime@3.5.41_react@16.14.0/node_modules/@umijs/runtime';
+import { createHashHistory, History } from '/Users/jiantianjianghui/Web_Project/etc-hooks/node_modules/.pnpm/@umijs+runtime@3.5.41_react@16.14.0/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
@@ -9,10 +9,10 @@ if ((<any>window).routerBase) {
 }
 
 // remove initial history because of ssr
-let history: History = process.env.__IS_SERVER ? null : createBrowserHistory(options);
+let history: History = process.env.__IS_SERVER ? null : createHashHistory(options);
 export const createHistory = (hotReload = false) => {
   if (!hotReload) {
-    history = createBrowserHistory(options);
+    history = createHashHistory(options);
   }
 
   return history;
