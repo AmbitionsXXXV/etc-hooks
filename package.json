@@ -6,11 +6,19 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "init": "pnpm install",
+    "init": "pnpm install && pnpm run build",
+    "start": "pnpm run dev",
+    "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
+    "clean": "pnpm run clean-dist && rimraf node_modules",
     "dev": "dumi dev",
     "etc-fe-lint-fix": "etc-fe-lint fix",
     "etc-fe-lint-scan": "etc-fe-lint scan",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r --filter=./packages/* run build",
+    "build:doc": "dumi build",
+    "test": "jest",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "pub": "pnpm run build && pnpm -r --filter=./packages/* publish",
+    "pub:beta": "pnpm run build && pnpm -r --filter=./packages/* publish --tag beta"
   },
   "keywords": [],
   "author": "",
