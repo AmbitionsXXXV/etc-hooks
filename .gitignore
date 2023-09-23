@@ -15,4 +15,6 @@ thumb
 sketch
 
 .umi/
+.umi-production/
 .idea/
+dist/
