@@ -18,3 +18,7 @@ sketch
 .umi-production/
 .idea/
 dist/
+
+packages/hooks/es
+packages/hooks/lib
+packages/hooks/dist
