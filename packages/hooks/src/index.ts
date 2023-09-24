@@ -1,1 +1,3 @@
-console.log('Etcetera')
+import useToggle from './useToggle'
+
+export { useToggle }
