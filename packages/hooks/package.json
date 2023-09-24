@@ -19,7 +19,7 @@
   "repository": "https://github.com/AmbitionsXXXV/etc-hooks",
   "homepage": "https://github.com/AmbitionsXXXV/etc-hooks",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp && webpack-cli"
   },
   "files": [
     "dist",
