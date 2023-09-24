@@ -30,8 +30,8 @@ function useToggle<D, R>(defaultValue: D = false as unknown as D, reverseValue?:
     const setRight = () => setState(reverseValueOrigin)
 
     return {
-      toggle,
       set,
+      toggle,
       setLeft,
       setRight,
     }
