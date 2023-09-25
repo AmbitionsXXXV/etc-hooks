@@ -15,15 +15,25 @@ nav:
 
 <code src="./example/example2.tsx">
 
-## params
+### Params
 
-```ts
-// 不传参数，第一个参数有默认值为 false
-function useToggle<T = boolean>(): [boolean, Actions<T>]
+| 参数         | 说明                     | 类型 | 默认值  |
+| ------------ | ------------------------ | ---- | ------- |
+| defaultValue | 可选项，传入默认的状态值 | `T`  | `false` |
+| reverseValue | 可选项，传入取反的状态值 | `U`  | -       |
 
-// 传一个参数，默认值为传入的参数
-function useToggle<T>(defaultValue: T): [T, Actions<T>]
+### Result
 
-// 传两个参数，第一个参数为默认值，第二个参数为切换值
-function useToggle<T, U>(defaultValue: T, reverseValue: U): [T | U, Actions<T | U>]
-```
+| 参数    | 说明     | 类型           |
+| ------- | -------- |--------------|
+| state   | 状态值   | -            |
+| actions | 操作集合 | `Actions<T>` |
+
+### Actions
+
+| 参数     | 说明                                                                            | 类型                      |
+| -------- | ------------------------------------------------------------------------------- | ------------------------- |
+| toggle   | 切换 state                                                                      | `() => void`              |
+| set      | 修改 state                                                                      | `(state: T \| U) => void` |
+| setLeft  | 设置为 defaultValue                                                             | `() => void`              |
+| setRight | 如果传入了 reverseValue, 则设置为 reverseValue。 否则设置为 defaultValue 的反值 | `() => void`              |
