@@ -22,3 +22,5 @@ dist/
 packages/hooks/es
 packages/hooks/lib
 packages/hooks/dist
+
+packages/hooks/metadata.json
