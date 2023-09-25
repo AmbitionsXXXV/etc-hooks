@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 16.18.0
 
-      - name: Install and Build
+      - name: Init
         run: |
           npm i -g pnpm
           pnpm run init
