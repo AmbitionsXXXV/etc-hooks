@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 
-type ToggleFn = () => void
+export type ToggleFn = () => void
 
 export interface Actions<T> {
   toggle: ToggleFn
