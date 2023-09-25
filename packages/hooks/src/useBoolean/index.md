@@ -36,9 +36,9 @@ const [state, { toggle, set, setTrue, setFalse }] = useBoolean(
 
 ### Actions
 
-| 参数     | 说明         | 类型                       |
-| -------- | ------------ | -------------------------- |
-| toggle   | 切换 state   | `() => void`               |
+| 参数     | 说明         | 类型                         |
+| -------- | ------------ |----------------------------|
+| toggle   | 切换 state   | `ToggleFn: () => void`     |
 | set      | 设置 state   | `(value: boolean) => void` |
-| setTrue  | 设置为 true  | `() => void`               |
-| setFalse | 设置为 false | `() => void`               |
+| setTrue  | 设置为 true  | `ToggleFn`               |
+| setFalse | 设置为 false | `ToggleFn`               |
