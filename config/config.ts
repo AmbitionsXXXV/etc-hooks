@@ -1,3 +1,5 @@
+import { menus } from './hooks'
+
 export default {
   nodeModulesTransform: {
     type: 'none',
@@ -48,6 +50,6 @@ export default {
         path: '/guide',
       },
     ],
-    // '/hooks': menus,
+    '/hooks': menus,
   },
 }
