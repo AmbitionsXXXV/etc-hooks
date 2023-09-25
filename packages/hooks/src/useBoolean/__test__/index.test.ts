@@ -4,7 +4,7 @@ import useBoolean from '../index'
 const setUp = (defaultValue?: boolean) => renderHook(() => useBoolean(defaultValue))
 
 describe('useBoolean', () => {
-  it('test on methods', async () => {
+  it('test on methods', () => {
     const { result } = setUp()
 
     expect(result.current[0]).toBe(false)
@@ -38,18 +38,6 @@ describe('useBoolean', () => {
       result.current[1].set(true)
     })
     expect(result.current[0]).toBe(true)
-
-    act(() => {
-      // @ts-ignore
-      result.current[1].set(0)
-    })
-    expect(result.current[0]).toBe(false)
-
-    act(() => {
-      // @ts-ignore
-      result.current[1].set('a')
-    })
-    expect(result.current[0]).toBe(true)
   })
 
   it('test on default value', () => {
@@ -59,16 +47,19 @@ describe('useBoolean', () => {
     const hook2 = setUp()
     expect(hook2.result.current[0]).toBe(false)
 
-    // @ts-ignore
-    const hook3 = setUp(0)
-    expect(hook3.result.current[0]).toBe(false)
+    expect(() => {
+      // @ts-ignore
+      const hook3 = setUp(0)
+    }).toThrowError('useBoolean: default value must be a boolean')
 
-    // @ts-ignore
-    const hook4 = setUp('')
-    expect(hook4.result.current[0]).toBe(false)
+    expect(() => {
+      // @ts-ignore
+      const hook4 = setUp('')
+    }).toThrowError('useBoolean: default value must be a boolean')
 
-    // @ts-ignore
-    const hook5 = setUp('hello')
-    expect(hook5.result.current[0]).toBe(true)
+    expect(() => {
+      // @ts-ignore
+      const hook5 = setUp('hello')
+    }).toThrowError('useBoolean: default value must be a boolean')
   })
 })
