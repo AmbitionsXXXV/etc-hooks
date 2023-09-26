@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
-import useLatest from '../useLatest'
-
-type Fn = () => void
+import useUnmount from '../useUnmount'
+import isBrowser from '../utils/isBrowser'
 
 export interface Options {
   restorePrevTitle?: boolean
@@ -9,12 +8,6 @@ export interface Options {
 
 const DEFAULT_OPTIONS = {
   restorePrevTitle: false,
-}
-
-const useUnmount = (fn: Fn) => {
-  const fnRef = useLatest(fn)
-
-  useEffect(() => () => fnRef.current(), [])
 }
 
 /**
@@ -25,11 +18,11 @@ const useUnmount = (fn: Fn) => {
  * 2. 组件销毁时，回复本身的页面标题
  */
 function useTitle(title: string, options: Options = DEFAULT_OPTIONS) {
-  const titleRef = useRef(document.title)
+  const titleRef = useRef(isBrowser ? document.title : '')
 
   useEffect(() => {
     document.title = title
-  }, [])
+  }, [title])
 
   useUnmount(() => {
     if (options.restorePrevTitle) {

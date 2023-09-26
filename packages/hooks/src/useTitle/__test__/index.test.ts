@@ -11,7 +11,7 @@ describe('useTitle', () => {
     act(() => {
       hook.rerender('Other Page Title')
     })
-    expect(document.title).toBe('Current Page Title')
+    expect(document.title).toBe('Other Page Title')
   })
 
   it('should restore document title on unmount', () => {
