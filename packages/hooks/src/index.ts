@@ -1,4 +1,5 @@
 import useBoolean from './useBoolean'
+import useCounter from './useCounter'
 import useDebounce from './useDebounce'
 import useDebounceFn from './useDebounceFn'
 import useLatest from './useLatest'
@@ -8,6 +9,7 @@ import useUnmount from './useUnmount'
 
 export {
   useBoolean,
+  useCounter,
   useDebounce,
   useDebounceFn,
   useLatest,
