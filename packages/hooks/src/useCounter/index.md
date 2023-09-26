@@ -31,10 +31,10 @@ const [state, { set, reset, increment, decrement }] = useCounter(
 
 ### counterOptions
 
-| 参数  | 说明  | 类型       |
-|-----|-----|----------|
-| min | 最小值 | `number` |
-| max | 最大值 | `number` |
+| 参数  | 说明  | 类型       | 默认值   |
+|-----|-----|----------|-------|
+| min | 最小值 | `number` | `-Infinity` |
+| max | 最大值 | `number` |   `Infinity`    |
 
 ### Actions
 
