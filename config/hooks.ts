@@ -7,4 +7,8 @@ export const menus = [
     title: 'DOM',
     children: ['useTitle'],
   },
+  {
+    title: '进阶',
+    children: ['useLatest'],
+  },
 ]

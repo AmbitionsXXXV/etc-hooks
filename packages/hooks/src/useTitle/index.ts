@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import useLatest from '../useLatest'
 
 type Fn = () => void
 
@@ -14,14 +15,6 @@ const useUnmount = (fn: Fn) => {
   const fnRef = useLatest(fn)
 
   useEffect(() => () => fnRef.current(), [])
-}
-
-const useLatest = <T>(value: T) => {
-  const ref = useRef(value)
-
-  ref.current = value
-
-  return ref
 }
 
 /**
