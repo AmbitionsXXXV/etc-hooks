@@ -5,11 +5,15 @@ export const menus = [
   },
   {
     title: '状态',
-    children: ['useBoolean', 'useToggle'],
+    children: ['useBoolean', 'useDebounce', 'useToggle'],
   },
   {
     title: 'DOM',
     children: ['useTitle'],
+  },
+  {
+    title: 'Effect',
+    children: ['useDebounceFn'],
   },
   {
     title: '进阶',

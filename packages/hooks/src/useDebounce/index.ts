@@ -1,15 +1,23 @@
 import { useEffect, useState } from 'react'
+import useDebounceFn from '../useDebounceFn'
 
-const useDebounce = <T>(value: T, waitTime?: number) => {
+export interface DebounceOptions {
+  wait?: number
+  leading?: boolean
+  trailing?: boolean
+  maxWait?: number
+}
+
+const useDebounce = <T>(value: T, options?: DebounceOptions) => {
   const [debounced, setDebounced] = useState(value)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebounced(value)
-    }, waitTime ?? 300)
+  const { run } = useDebounceFn(() => {
+    setDebounced(value)
+  }, options)
 
-    return () => clearTimeout(timer)
-  }, [value, waitTime])
+  useEffect(() => {
+    run()
+  }, [value])
 
   return debounced
 }

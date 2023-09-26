@@ -1,7 +1,17 @@
-import useToggle from './useToggle'
 import useBoolean from './useBoolean'
-import useTitle from './useTitle'
+import useDebounce from './useDebounce'
+import useDebounceFn from './useDebounceFn'
 import useLatest from './useLatest'
+import useTitle from './useTitle'
+import useToggle from './useToggle'
 import useUnmount from './useUnmount'
 
-export { useToggle, useBoolean, useTitle, useLatest, useUnmount }
+export {
+  useBoolean,
+  useDebounce,
+  useDebounceFn,
+  useLatest,
+  useTitle,
+  useToggle,
+  useUnmount,
+}
