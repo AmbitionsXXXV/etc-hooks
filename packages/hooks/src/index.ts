@@ -7,6 +7,7 @@ import useLatest from './useLatest'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
 import useUnmount from './useUnmount'
+import useUnmountRef from './useUnmountRef'
 
 export {
   useBoolean,
@@ -18,4 +19,5 @@ export {
   useTitle,
   useToggle,
   useUnmount,
+  useUnmountRef,
 }
