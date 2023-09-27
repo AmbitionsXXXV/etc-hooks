@@ -1,4 +1,5 @@
 import useBoolean from './useBoolean'
+import useCallbackRef from './useCallbackRef'
 import useCounter from './useCounter'
 import useDebounce from './useDebounce'
 import useDebounceFn from './useDebounceFn'
@@ -9,6 +10,7 @@ import useUnmount from './useUnmount'
 
 export {
   useBoolean,
+  useCallbackRef,
   useCounter,
   useDebounce,
   useDebounceFn,
