@@ -5,7 +5,7 @@ export const menus = [
   },
   {
     title: '状态',
-    children: ['useBoolean', 'useCounter', 'useDebounce', 'useToggle'],
+    children: ['useBoolean', 'useCounter', 'useDebounce', 'useToggle', 'useUpdate'],
   },
   {
     title: 'DOM',
@@ -17,6 +17,6 @@ export const menus = [
   },
   {
     title: '进阶',
-    children: ['useLatest'],
+    children: ['useLatest', 'useMemoizedFn'],
   },
 ]
