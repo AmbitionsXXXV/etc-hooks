@@ -1,5 +1,6 @@
 import useBoolean from './useBoolean'
 import useCallbackRef from './useCallbackRef'
+import useClipboard from './useClipboard'
 import useCounter from './useCounter'
 import useCreation from './useCreation'
 import useDebounce from './useDebounce'
@@ -17,6 +18,7 @@ import useUpdate from './useUpdate'
 export {
   useBoolean,
   useCallbackRef,
+  useClipboard,
   useCounter,
   useCreation,
   useDebounce,

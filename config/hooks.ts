@@ -4,7 +4,7 @@ export const menus = [
     children: ['useCallbackRef', 'useMount', 'useUnmount', 'useUnmountRef'],
   },
   {
-    title: '请求',
+    title: 'useRequest',
     children: ['useRequest/doc/index', 'useRequest/doc/basic'],
   },
   {
@@ -20,7 +20,7 @@ export const menus = [
     children: ['useDebounceFn'],
   },
   {
-    title: '进阶',
-    children: ['useLatest', 'useMemoizedFn'],
+    title: '进阶工具 hooks',
+    children: ['useClipboard', 'useLatest', 'useMemoizedFn'],
   },
 ]

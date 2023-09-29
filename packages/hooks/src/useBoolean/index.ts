@@ -11,7 +11,7 @@ export interface Actions {
 
 export default function useBoolean(defaultValue = false): [boolean, Actions] {
   if (!isBoolean(defaultValue)) {
-    throw new Error('useBoolean: default value must be a boolean')
+    defaultValue = false
   }
 
   const [state, { toggle, set }] = useToggle(defaultValue)
