@@ -2,7 +2,7 @@
 title: 首页
 hero:
   image: /etc-hooks/short-logo.png
-  desc: Etcetera's React 业务 Hooks
+  desc: Etcetera's React 业务 Hooks 整合
   actions:
     - text: 指南
       link: /guide
