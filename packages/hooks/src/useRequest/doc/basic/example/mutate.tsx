@@ -2,7 +2,7 @@
  * title: 修改用户名
  */
 
-import { message } from 'antd'
+import { Button, Input, message } from 'antd'
 import React, { useRef, useState } from 'react'
 import { useRequest } from 'etc-hooks'
 import Mock from 'mockjs'
@@ -15,7 +15,7 @@ function getUsername(): Promise<string> {
   })
 }
 
-function editUsername(username: string): Promise<void> {
+function editUsername(_username: string): Promise<void> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Math.random() > 0.5) {
@@ -58,15 +58,16 @@ export default () => {
   return (
     <div>
       <p>Username: {username}</p>
-      <input
-        onChange={(e) => setState(e.target.value)}
+      <Input
         value={state}
         placeholder="Please enter username"
         style={{ width: 240, marginRight: 16 }}
+        onChange={(e) => setState(e.target.value)}
       />
-      <button type="button" onClick={onChange}>
+
+      <Button type="primary" onClick={onChange}>
         Edit
-      </button>
+      </Button>
     </div>
   )
 }

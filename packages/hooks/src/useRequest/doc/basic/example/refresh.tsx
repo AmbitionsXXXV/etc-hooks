@@ -2,9 +2,10 @@
  * title: 刷新用户名称
  */
 
+import React, { useEffect } from 'react'
 import { useRequest } from 'etc-hooks'
 import Mock from 'mockjs'
-import React, { useEffect } from 'react'
+import { Button } from 'antd'
 
 function getUsername(id: number): Promise<string> {
   console.log('use-request-refresh-id', id)
@@ -33,9 +34,9 @@ export default () => {
   return (
     <div>
       <p>Username: {data}</p>
-      <button onClick={refresh} type="button">
+      <Button onClick={refresh} type="primary">
         Refresh
-      </button>
+      </Button>
     </div>
   )
 }

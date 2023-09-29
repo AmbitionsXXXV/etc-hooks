@@ -1,5 +1,6 @@
 import React from 'react'
 import { useBoolean } from 'etc-hooks'
+import { Button } from 'antd'
 
 export default () => {
   const [state, { toggle, setTrue, setFalse }] = useBoolean(true)
@@ -8,15 +9,15 @@ export default () => {
     <div>
       <p>Effects：{JSON.stringify(state)}</p>
       <p>
-        <button type="button" onClick={toggle}>
+        <Button type="primary" onClick={toggle}>
           Toggle
-        </button>
-        <button type="button" onClick={setFalse} style={{ margin: '0 16px' }}>
+        </Button>
+        <Button type="primary" onClick={setFalse} style={{ margin: '0 16px' }}>
           setFalse
-        </button>
-        <button type="button" onClick={setTrue}>
+        </Button>
+        <Button type="primary" onClick={setTrue}>
           setTrue
-        </button>
+        </Button>
       </p>
     </div>
   )

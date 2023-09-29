@@ -1,8 +1,9 @@
+import React, { useState } from 'react'
 import { useRequest } from 'etc-hooks'
 import Mock from 'mockjs'
-import React, { useState } from 'react'
+import { Button, Input } from 'antd'
 
-function getUsername(id: string): Promise<string> {
+function getUsername(_id: string): Promise<string> {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(Mock.mock('@name'))
@@ -28,15 +29,15 @@ export default () => {
 
   return (
     <div>
-      <input
-        onChange={(e) => setState(e.target.value)}
+      <Input
         value={state}
         placeholder="Please enter userId"
         style={{ width: 240, marginRight: 16 }}
+        onChange={(e) => setState(e.target.value)}
       />
-      <button type="button" onClick={onChange}>
+      <Button type="primary" onClick={onChange}>
         GetUserName
-      </button>
+      </Button>
       <p style={{ marginTop: 8 }}>UserId: {params[0]}</p>
       <p>Username: {username}</p>
     </div>
