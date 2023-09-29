@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { message } from 'antd'
 
 const useClipboard = ({ timeout = 2000 } = {}) => {
   const [error, setError] = useState<Error | null>(null)
@@ -16,7 +17,10 @@ const useClipboard = ({ timeout = 2000 } = {}) => {
     if ('clipboard' in navigator) {
       navigator.clipboard
         .writeText(valueToCopy)
-        .then(() => handleCopyResult(true))
+        .then(() => {
+          handleCopyResult(true)
+          message.success('已复制到剪贴板')
+        })
         .catch((err) => setError(err))
     } else {
       setError(new Error('useClipboard: navigator.clipboard is not supported'))
