@@ -8,7 +8,7 @@ import useUpdate from '../../useUpdate'
 import isDev from '../../utils/isDev'
 import Fetch from './Fetch'
 
-const useRequestImplement = <TData, TParams extends []>(
+const useRequestImplement = <TData, TParams extends any[]>(
   service: Service<TData, TParams>,
   options: Options<TData, TParams> = {},
   plugins: Array<Plugin<TData, TParams>> = [],
@@ -48,10 +48,9 @@ const useRequestImplement = <TData, TParams extends []>(
 
   useMount(() => {
     if (!manual) {
-      const params =
-        fetchInstance.state.params || options.defaultParams || ([] as TParams)
+      const params = fetchInstance.state.params || options.defaultParams || []
 
-      fetchInstance.run(...params)
+      fetchInstance.run(...(params as TParams))
     }
   })
 

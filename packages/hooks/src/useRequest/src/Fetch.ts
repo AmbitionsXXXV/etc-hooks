@@ -141,7 +141,7 @@ export default class Fetch<TData, TParams extends any[]> {
     })
   }
 
-  runPluginHandler(event: keyof PluginReturn<TData, TParams>, ...rest: any[]) {
+  runPluginHandler(event: keyof PluginReturn<TData, TParams>, ...rest: unknown[]) {
     // @ts-ignore
     const r = this.pluginImpls.map((i) => i[event]?.(...rest)).filter(Boolean)
 

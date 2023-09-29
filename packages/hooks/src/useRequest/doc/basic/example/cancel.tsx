@@ -2,7 +2,8 @@ import { Button, Input, message } from 'antd'
 import React, { useState } from 'react'
 import { useRequest } from 'etc-hooks'
 
-function editUsername(username: string): Promise<void> {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function editUsername(_username: string): Promise<void> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Math.random() > 0.5) {
