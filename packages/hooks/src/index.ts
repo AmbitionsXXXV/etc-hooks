@@ -1,11 +1,13 @@
 import useBoolean from './useBoolean'
 import useCallbackRef from './useCallbackRef'
 import useCounter from './useCounter'
+import useCreation from './useCreation'
 import useDebounce from './useDebounce'
 import useDebounceFn from './useDebounceFn'
 import useLatest from './useLatest'
 import useMemoizedFn from './useMemoizedFn'
 import useMount from './useMount'
+import useRequest from './useRequest'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
 import useUnmount from './useUnmount'
@@ -16,11 +18,13 @@ export {
   useBoolean,
   useCallbackRef,
   useCounter,
+  useCreation,
   useDebounce,
   useDebounceFn,
   useLatest,
   useMemoizedFn,
   useMount,
+  useRequest,
   useTitle,
   useToggle,
   useUnmount,

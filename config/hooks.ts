@@ -4,6 +4,10 @@ export const menus = [
     children: ['useCallbackRef', 'useMount', 'useUnmount', 'useUnmountRef'],
   },
   {
+    title: '请求',
+    children: ['useRequest/doc/index', 'useRequest/doc/basic'],
+  },
+  {
     title: '状态',
     children: ['useBoolean', 'useCounter', 'useDebounce', 'useToggle', 'useUpdate'],
   },
