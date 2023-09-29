@@ -1,4 +1,4 @@
-import useRequestImplement from 'etcHooks/lib/useRequest/src/useRequestImplement'
+import useRequestImplement from './useRequestImplement'
 import { Options, Plugin, Service } from './types'
 
 const useRequest = <TData, TParams extends any[]>(
