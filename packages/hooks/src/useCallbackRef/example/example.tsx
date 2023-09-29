@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
 import { useCallbackRef } from 'etcHooks'
+import { Button } from 'antd'
 
 const EtcDemo = () => {
   // 创建一个回调函数的引用
@@ -14,7 +15,9 @@ const EtcDemo = () => {
 
   return (
     <div>
-      <button onClick={handleClick}>Invoke Callback</button>
+      <Button type="primary" onClick={handleClick}>
+        Invoke Callback
+      </Button>
     </div>
   )
 }

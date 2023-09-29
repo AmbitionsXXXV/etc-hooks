@@ -3,7 +3,7 @@
  * desc: 在这个例子中，我们通过 `runAsync(username)` 来修改用户名，此时必须通过 catch 来自行处理异常。
  */
 
-import { message } from 'antd'
+import { Button, Input, message } from 'antd'
 import React, { useState } from 'react'
 import { useRequest } from 'etc-hooks'
 
@@ -38,15 +38,15 @@ export default () => {
 
   return (
     <div>
-      <input
-        onChange={(e) => setState(e.target.value)}
+      <Input
         value={state}
         placeholder="Please enter username"
         style={{ width: 240, marginRight: 16 }}
+        onChange={(e) => setState(e.target.value)}
       />
-      <button disabled={loading} type="button" onClick={onClick}>
+      <Button disabled={loading} type="primary" onClick={onClick}>
         {loading ? 'Loading' : 'Edit'}
-      </button>
+      </Button>
     </div>
   )
 }

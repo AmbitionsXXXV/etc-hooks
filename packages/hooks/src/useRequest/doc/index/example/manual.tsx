@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { message } from 'antd'
+import { Button, Input, message } from 'antd'
 import { useRequest } from 'etc-hooks'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -31,15 +31,15 @@ export default () => {
 
   return (
     <div>
-      <input
-        onChange={(e) => setState(e.target.value)}
+      <Input
         value={state}
         placeholder="Please enter username"
         style={{ width: 240, marginRight: 16 }}
+        onChange={(e) => setState(e.target.value)}
       />
-      <button disabled={loading} type="button" onClick={() => run(state)}>
+      <Button disabled={loading} type="primary" onClick={() => run(state)}>
         {loading ? 'Loading' : 'Edit'}
-      </button>
+      </Button>
     </div>
   )
 }
