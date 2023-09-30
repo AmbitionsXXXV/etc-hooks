@@ -21,7 +21,9 @@ function useTitle(title: string, options: Options = DEFAULT_OPTIONS) {
   const titleRef = useRef(isBrowser ? document.title : '')
 
   useEffect(() => {
-    document.title = title
+    if (title.trim().length > 0) {
+      document.title = title
+    }
   }, [title])
 
   useUnmount(() => {
