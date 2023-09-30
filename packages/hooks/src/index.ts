@@ -5,9 +5,11 @@ import useCounter from './useCounter'
 import useCreation from './useCreation'
 import useDebounce from './useDebounce'
 import useDebounceFn from './useDebounceFn'
+import useIsomorphicEffect from './useIsomorphicEffect'
 import useLatest from './useLatest'
 import useMemoizedFn from './useMemoizedFn'
 import useMount from './useMount'
+import useOs from './useOs'
 import useRequest from './useRequest'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
@@ -23,9 +25,11 @@ export {
   useCreation,
   useDebounce,
   useDebounceFn,
+  useIsomorphicEffect,
   useLatest,
   useMemoizedFn,
   useMount,
+  useOs,
   useRequest,
   useTitle,
   useToggle,

@@ -21,6 +21,6 @@ export const menus = [
   },
   {
     title: '进阶工具 hooks',
-    children: ['useClipboard', 'useLatest', 'useMemoizedFn'],
+    children: ['useClipboard', 'useLatest', 'useMemoizedFn', 'useOs'],
   },
 ]
