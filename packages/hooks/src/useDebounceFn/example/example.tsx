@@ -1,5 +1,6 @@
 import { useDebounceFn } from 'etc-hooks'
 import React, { useState } from 'react'
+import { Button } from 'antd'
 
 export default () => {
   const [value, setValue] = useState(0)
@@ -15,9 +16,10 @@ export default () => {
   return (
     <div>
       <p style={{ marginTop: 16 }}> Clicked count: {value} </p>
-      <button type="button" onClick={run}>
+
+      <Button type="primary" onClick={run}>
         Click fast!
-      </button>
+      </Button>
     </div>
   )
 }

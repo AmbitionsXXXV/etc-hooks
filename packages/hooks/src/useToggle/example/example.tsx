@@ -1,5 +1,6 @@
 import React from 'react'
 import { useToggle } from 'etcHooks'
+import { Button } from 'antd'
 
 export default () => {
   const [state, { toggle, setLeft, setRight }] = useToggle()
@@ -7,10 +8,11 @@ export default () => {
   return (
     <div>
       <p>当前的 state 的值为: {`${state}`}</p>
+
       <p>
-        <button onClick={toggle}>toggle切换</button>
-        <button onClick={setLeft}>setLeft切换</button>
-        <button onClick={setRight}>setRight切换</button>
+        <Button onClick={toggle}>toggle切换</Button>
+        <Button onClick={setLeft}>setLeft切换</Button>
+        <Button onClick={setRight}>setRight切换</Button>
       </p>
     </div>
   )

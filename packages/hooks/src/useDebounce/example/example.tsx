@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDebounce } from 'etc-hooks'
+import { Input } from 'antd'
 
 export default () => {
   const [value, setValue] = useState<string>()
@@ -7,7 +8,7 @@ export default () => {
 
   return (
     <div>
-      <input
+      <Input
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Typed value"

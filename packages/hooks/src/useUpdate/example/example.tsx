@@ -8,6 +8,7 @@ export default () => {
   return (
     <>
       <div>Time: {Date.now()}</div>
+
       <Button type="primary" onClick={update} style={{ marginTop: 8 }}>
         update
       </Button>

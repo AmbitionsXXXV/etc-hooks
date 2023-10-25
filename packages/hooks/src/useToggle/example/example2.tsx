@@ -1,5 +1,6 @@
 import React from 'react'
 import { useToggle } from 'etcHooks'
+import { Button } from 'antd'
 
 export default () => {
   const [state, { toggle, set, setLeft, setRight }] = useToggle('OOR', 'Aimyon')
@@ -7,22 +8,31 @@ export default () => {
   return (
     <div>
       <p>Effects：{state}</p>
+
       <p>
-        <button type="button" onClick={toggle}>
+        <Button type="primary" onClick={toggle}>
           Toggle
-        </button>
-        <button type="button" style={{ margin: '0 8px' }} onClick={() => set('OOR')}>
+        </Button>
+
+        <Button
+          type="primary"
+          style={{ margin: '0 8px' }}
+          onClick={() => set('OOR')}
+        >
           Set OOR
-        </button>
-        <button type="button" onClick={() => set('Aimyon')}>
+        </Button>
+
+        <Button type="primary" onClick={() => set('Aimyon')}>
           Set Aimyon
-        </button>
-        <button type="button" onClick={setLeft} style={{ margin: '0 8px' }}>
+        </Button>
+
+        <Button type="primary" onClick={setLeft} style={{ margin: '0 8px' }}>
           setLeft
-        </button>
-        <button type="button" onClick={setRight}>
+        </Button>
+
+        <Button type="primary" onClick={setRight}>
           setRight
-        </button>
+        </Button>
       </p>
     </div>
   )

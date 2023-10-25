@@ -1,5 +1,5 @@
 import { useBoolean, useUnmountRef } from 'etc-hooks'
-import { message } from 'antd'
+import { Button, message } from 'antd'
 import React, { useEffect } from 'react'
 
 const MyComponent = () => {
@@ -20,9 +20,10 @@ export default () => {
 
   return (
     <>
-      <button type="button" onClick={toggle}>
+      <Button type="primary" onClick={toggle}>
         {state ? 'unmount' : 'mount'}
-      </button>
+      </Button>
+
       {state && <MyComponent />}
     </>
   )
