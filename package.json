@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install",
+    "prepare": "husky install && dumi setup",
     "init": "pnpm install && pnpm run build",
     "start": "pnpm run dev",
     "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
@@ -49,7 +49,7 @@
     "coveralls": "^3.1.1",
     "cross-env": "^7.0.3",
     "del": "^5.1.0",
-    "dumi": "^1.1.48",
+    "dumi": "^2.2.14",
     "eslint": "^8.50.0",
     "eslint-plugin-react-hooks": "^4.0.8",
     "etc-fe-eslint-config": "^1.1.7",

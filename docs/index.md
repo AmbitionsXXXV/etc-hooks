@@ -7,7 +7,7 @@ hero:
     - text: 指南
       link: /guide
     - text: Hooks 列表
-      link: /hooks
+      link: /hooks/index
 footer: Copyright (c) © 2023 by etcetera, All Rights Reserved
 ---
 

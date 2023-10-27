@@ -11,6 +11,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@@/*": [".dumi/tmp/*"],
       "etcHooks": ["./packages/hooks/src/index.ts"],
       "etc-hooks": ["./packages/hooks/src/index.ts"],
       "etcHooks/lib/*": ["./packages/hooks/src/*"],
@@ -19,7 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "importHelpers": true
+    "importHelpers": true,
   },
   "exclude": ["node_modules", "lib", "es", "dist", "example"]
 }
