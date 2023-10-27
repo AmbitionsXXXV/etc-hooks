@@ -19,3 +19,24 @@ $ pnpm install etc-hooks --save
 ```ts
 import { useToggle } from 'etc-hooks';
 ```
+
+## 可能出现的问题
+
+### node17 及以上版本
+
+```shell
+# Error message "error:0308010C:digital envelope routines::unsupported"
+
+# 解决方案
+
+# On Unix-like (Linux, macOS, Git bash, etc.):
+export NODE_OPTIONS=--openssl-legacy-provider
+
+# On Windows (cmd.exe):
+set NODE_OPTIONS=--openssl-legacy-provider
+
+# On Windows (PowerShell):
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+# or use nvm/n to downgrade node version to 16
+```
