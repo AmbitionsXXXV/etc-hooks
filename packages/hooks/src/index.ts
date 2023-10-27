@@ -11,6 +11,7 @@ import useMemoizedFn from './useMemoizedFn'
 import useMount from './useMount'
 import useOs from './useOs'
 import useRequest from './useRequest'
+import useSet from './useSet'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
 import useUnmount from './useUnmount'
@@ -31,6 +32,7 @@ export {
   useMount,
   useOs,
   useRequest,
+  useSet,
   useTitle,
   useToggle,
   useUnmount,

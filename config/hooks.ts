@@ -9,7 +9,14 @@ export const menus = [
   },
   {
     title: '状态',
-    children: ['useBoolean', 'useCounter', 'useDebounce', 'useToggle', 'useUpdate'],
+    children: [
+      'useBoolean',
+      'useCounter',
+      'useDebounce',
+      'useSet',
+      'useToggle',
+      'useUpdate',
+    ],
   },
   {
     title: 'DOM',
