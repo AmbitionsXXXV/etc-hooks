@@ -33,11 +33,11 @@ const func = useMemoizedFn(() => {
 
 ### 基础用法
 
-<code hideActions='["CSB"]' src="./example/example.tsx" />
+<code hideActions='["CSB"]' src="./example/example.tsx"></code>
 
 ### 性能提升
 
-<code hideActions='["CSB"]' src="./example/example2.tsx" />
+<code hideActions='["CSB"]' src="./example/example2.tsx"></code>
 
 ## API
 

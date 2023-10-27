@@ -11,7 +11,7 @@ useUpdate 会返回一个函数，调用该函数会强制组件重新渲染。
 
 ### 基础用法
 
-<code src="./example/example.tsx" />
+<code src="./example/example.tsx"></code>
 
 ## API
 

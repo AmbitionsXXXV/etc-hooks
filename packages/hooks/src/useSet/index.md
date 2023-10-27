@@ -9,7 +9,7 @@ nav:
 
 ## 代码演示
 
-<code hideActions='["CSB"]' src="./example/example.tsx" />
+<code hideActions='["CSB"]' src="./example/example.tsx"></code>
 
 ## API
 

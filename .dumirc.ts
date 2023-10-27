@@ -3,6 +3,7 @@ import path from 'node:path'
 import { menus } from './config/hooks'
 
 export default defineConfig({
+  base: '/etc-hooks/',
   publicPath: '/etc-hooks/',
   extraBabelPlugins: [
     [
@@ -37,6 +38,28 @@ export default defineConfig({
       { title: 'GitHub', link: 'https://github.com/AmbitionsXXXV/etc-hooks' },
     ],
     sidebar: {
+      '/': [
+        {
+          title: '首页',
+          children: [
+            {
+              title: '首页',
+              link: '/',
+            },
+          ],
+        },
+      ],
+      '/guide': [
+        {
+          title: '介绍',
+          children: [
+            {
+              title: '介绍',
+              link: '/guide',
+            },
+          ],
+        },
+      ],
       '/hooks': menus,
     },
   },

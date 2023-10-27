@@ -11,7 +11,7 @@ nav:
 
 ### 基础用法
 
-<code hideActions='["CSB"]' src="./example/example.tsx" />
+<code hideActions='["CSB"]' src="./example/example.tsx"></code>
 
 ### 参数
 

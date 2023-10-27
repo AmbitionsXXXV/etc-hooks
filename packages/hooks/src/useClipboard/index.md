@@ -11,7 +11,7 @@ nav:
 
 ### 基础用法
 
-<code src="./example/example.tsx" />
+<code src="./example/example.tsx"></code>
 
 ## API
 

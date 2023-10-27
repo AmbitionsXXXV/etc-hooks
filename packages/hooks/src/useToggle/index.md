@@ -9,11 +9,11 @@ nav:
 
 ## 基础使用
 
-<code src="./example/example.tsx">
+<code src="./example/example.tsx"></code>
 
 ## 两个值切换以及设置指定值
 
-<code src="./example/example2.tsx">
+<code src="./example/example2.tsx"></code>
 
 ### Params
 
