@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       etc-fe-commitlint-config:
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.1.7
+        version: 1.1.7
       etc-fe-eslint-plugin:
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.1.7
+        version: 1.1.7
       etc-fe-markdownlint-config:
         specifier: ^1.1.1
         version: 1.1.1(markdownlint@0.28.2)
       etc-fe-stylelint-config:
-        specifier: ^1.1.1
-        version: 1.1.1(stylelint-scss@5.2.1)(stylelint@15.10.3)
+        specifier: ^1.1.5
+        version: 1.1.5(stylelint-scss@5.2.1)(stylelint@15.10.3)
     devDependencies:
       '@ant-design/icons':
         specifier: ^5.0.1
@@ -8078,24 +8078,17 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /etc-fe-commitlint-config@1.1.1:
-    resolution: {integrity: sha512-MDGwlr2JCwU0zN+jzhS6XmW//7jBzNQKzIrvxBBAPh21lUI7/FXNIj1JNq7EC9bQU0jKkTWW+qoYLC4LcBJwUQ==}
-    dependencies:
-      conventional-changelog-conventionalcommits: 4.6.3
-    dev: false
-
   /etc-fe-commitlint-config@1.1.7:
     resolution: {integrity: sha512-haZDnRb3p5zB5KK3tGswJbhb9KDNBZ5NgB6hgLR7HQlKvW1/JkeAwvqhU8eJBuo/wzoLKMDepbc5r4eMEIU4ww==}
     dependencies:
       conventional-changelog-conventionalcommits: 4.6.3
-    dev: true
 
   /etc-fe-eslint-config@1.1.7:
     resolution: {integrity: sha512-ZCkZRsHF1qfCLb0Yzr5hEK1ncK/pxh//NLvfM3Be/G5ORM6vpyj2d6lenTO+wbcf2ZpUbDFIBjbTWNyp1Y23AQ==}
     dev: true
 
-  /etc-fe-eslint-plugin@1.1.1:
-    resolution: {integrity: sha512-7zh+dm3H3ie5bViKEU8PTDZ85rVLySAM4BDa4A3jaSHh0HTr26sPIQna1lk76/DftOeno9mvHnBjL15Fr+rkDQ==}
+  /etc-fe-eslint-plugin@1.1.7:
+    resolution: {integrity: sha512-WxLxdMTywODDGT64rM7KU45hU4MRoEWcirR5CushANnOxbg41B+cGnV9AVqNb2TzVpvMR33qRIfFNU+Rbo8VKg==}
     dependencies:
       fs-extra: 9.1.0
       require-all: 3.0.0
@@ -8173,16 +8166,6 @@ packages:
       markdownlint: 0.28.2
     dev: false
 
-  /etc-fe-stylelint-config@1.1.1(stylelint-scss@5.2.1)(stylelint@15.10.3):
-    resolution: {integrity: sha512-sis5+Im0jzMs6Zuow6V6irGzZYXFdn/zT1uqOMjNg8b1uJQLm00R5as+CrLVjZNp0D3mlSn9/l6Bds38KreFWg==}
-    peerDependencies:
-      stylelint: '>=8.3.0'
-      stylelint-scss: '>=2.0.0'
-    dependencies:
-      stylelint: 15.10.3(typescript@5.2.2)
-      stylelint-scss: 5.2.1(stylelint@15.10.3)
-    dev: false
-
   /etc-fe-stylelint-config@1.1.5(stylelint-scss@4.7.0)(stylelint@14.16.1):
     resolution: {integrity: sha512-5hq13tEKWBBHlTcF7DyzbJhudV1c5/yPF67bAvrW6F2YWuBtNnNbsrdd4wNsEyBqjaOoROc17kHMEUAonoib/g==}
     peerDependencies:
@@ -8192,6 +8175,16 @@ packages:
       stylelint: 14.16.1
       stylelint-scss: 4.7.0(stylelint@14.16.1)
     dev: true
+
+  /etc-fe-stylelint-config@1.1.5(stylelint-scss@5.2.1)(stylelint@15.10.3):
+    resolution: {integrity: sha512-5hq13tEKWBBHlTcF7DyzbJhudV1c5/yPF67bAvrW6F2YWuBtNnNbsrdd4wNsEyBqjaOoROc17kHMEUAonoib/g==}
+    peerDependencies:
+      stylelint: '>=8.3.0'
+      stylelint-scss: '>=2.0.0'
+    dependencies:
+      stylelint: 15.10.3(typescript@5.2.2)
+      stylelint-scss: 5.2.1(stylelint@15.10.3)
+    dev: false
 
   /events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
@@ -13996,7 +13989,7 @@ packages:
     resolution: {integrity: sha512-/lkZ7Yb3be06e68y4wn5WIyudzvrnHiTEjeAznJ7nPrfmjoCan2hcKPXmTYXdHU+IqkvGbzDlLZRWbVtmRTAcw==}
     engines: {npm: '>=3.0.0'}
     dependencies:
-      '@babel/runtime': 7.22.15
+      '@babel/runtime': 7.23.2
       prop-types: 15.8.1
       rax-children: 1.0.0(rax@1.2.3)
       rax-clone-element: 1.0.0(rax@1.2.3)
@@ -16989,7 +16982,7 @@ packages:
   /style-unit@3.0.5:
     resolution: {integrity: sha512-xL+kev1W1dPthdhpQqZs9Qk1zenQiHKyy9oy2/VasW4z6wi7m7qQvMe67foPsr99JSs0115X0TCN1ch1n0XqSw==}
     dependencies:
-      '@babel/runtime': 7.22.15
+      '@babel/runtime': 7.23.2
       universal-env: 3.3.3
     dev: true
 

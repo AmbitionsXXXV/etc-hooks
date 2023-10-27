@@ -24,10 +24,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "etc-fe-commitlint-config": "^1.1.1",
-    "etc-fe-eslint-plugin": "^1.1.1",
+    "etc-fe-commitlint-config": "^1.1.7",
+    "etc-fe-eslint-plugin": "^1.1.7",
     "etc-fe-markdownlint-config": "^1.1.1",
-    "etc-fe-stylelint-config": "^1.1.1"
+    "etc-fe-stylelint-config": "^1.1.5"
   },
   "devDependencies": {
     "@ant-design/icons": "^5.0.1",
