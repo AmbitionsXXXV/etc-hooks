@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install && dumi setup",
+    "prepare": "husky install && husky add .husky/pre-commit 'pnpm run test & etc-fe-lint commit-file-scan' && husky add .husky/commit-msg 'etc-fe-lint commit-msg-scan' && dumi setup",
     "init": "pnpm install && pnpm run build",
     "start": "pnpm run dev",
     "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
