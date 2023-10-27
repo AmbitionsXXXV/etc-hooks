@@ -29,7 +29,10 @@ export const menus = [
   },
   {
     title: 'DOM',
-    children: [{ title: 'useTitle', link: '/hooks/use-title' }],
+    children: [
+      { title: 'useTitle', link: '/hooks/use-title' },
+      { title: 'useColorSchema', link: '/hooks/use-color-schema' },
+    ],
   },
   {
     title: 'Effect',

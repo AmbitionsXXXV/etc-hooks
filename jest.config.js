@@ -6,7 +6,10 @@ module.exports = {
   modulePathIgnorePatterns: ['<rootDir>/package.json'],
   resetMocks: false,
   setupFiles: ['./jest.setup.js', 'jest-localstorage-mock'],
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-dom/extend-expect',
+    './config/jest/jsdom.mocks.js',
+  ],
   transform: {
     '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
   },

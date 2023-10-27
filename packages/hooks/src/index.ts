@@ -1,6 +1,7 @@
 import useBoolean from './useBoolean'
 import useCallbackRef from './useCallbackRef'
 import useClipboard from './useClipboard'
+import useColorSchema from './useColorSchema'
 import useCounter from './useCounter'
 import useCreation from './useCreation'
 import useDebounce from './useDebounce'
@@ -22,6 +23,7 @@ export {
   useBoolean,
   useCallbackRef,
   useClipboard,
+  useColorSchema,
   useCounter,
   useCreation,
   useDebounce,

@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react'
-import useCounter from '../index'
+import useCounter from '..'
 
 describe('useCounter', () => {
   it('correctly returns initial state', () => {
