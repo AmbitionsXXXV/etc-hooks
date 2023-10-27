@@ -39,7 +39,7 @@ Etcetera React 业务 Hooks
 
 ### 静态文件打包工具 -- dumi
 
-就目前前端社区而言，`dumi`是当之无愧的为组件研发而生的静态站点解决方案；
+就目前国内前端社区而言，`dumi`是当之无愧的为组件研发而生的静态站点解决方案；
 
 ### 测试工具 -- jest
 
@@ -52,7 +52,7 @@ Etcetera React 业务 Hooks
 参考[conventional-changelog-cli](https://www.npmjs.com/package/conventional-changelog-cli)，全局安装`conventional-changelog-cli`：
 
 ```bash
-npm install -g conventional-changelog-cli
+pnpm install -g conventional-changelog-cli
 pnpm run changelog
 ```
 

@@ -30,6 +30,7 @@ export default defineConfig({
     codeBlockMode: 'passive',
   },
   themeConfig: {
+    footer: 'Powered by <a href="https://github.com/AmbitionsXXXV">etcetera</a>',
     nav: [
       { title: '指南', link: '/guide' },
       { title: 'Hooks', link: '/hooks/index' },
