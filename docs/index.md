@@ -21,7 +21,7 @@ footer: Copyright (c) © 2023 by etcetera, All Rights Reserved
 ## 📦 安装
 
 ```bash
-$ pnpm install etc-hooks --save
+pnpm install etc-hooks --save
 ```
 
 ## 🔨 使用
