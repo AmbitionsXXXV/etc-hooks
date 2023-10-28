@@ -1,8 +1,9 @@
 ---
 title: 首页
 hero:
+  title: Etc hooks
   image: /etc-hooks/short-logo.png
-  desc: Etcetera's React 业务 Hooks 整合
+  description: A react hooks library developed with dumi
   actions:
     - text: 指南
       link: /guide
@@ -28,5 +29,5 @@ $ pnpm install etc-hooks --save
 参考 `Hooks`内容，使用如下：
 
 ```ts
-import { useToggle } from 'etc-hooks';
+import { useToggle } from 'etc-hooks'
 ```
