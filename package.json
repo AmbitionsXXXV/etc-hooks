@@ -10,6 +10,7 @@
     "start": "pnpm run dev",
     "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
     "clean": "pnpm run clean-dist && rimraf node_modules",
+    "reinstall": "pnpm run clean && pnpm run init",
     "dev": "dumi dev",
     "etc-fe-lint-fix": "etc-fe-lint fix",
     "etc-fe-lint-scan": "etc-fe-lint scan",
