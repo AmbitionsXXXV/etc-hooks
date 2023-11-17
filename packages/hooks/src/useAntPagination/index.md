@@ -9,11 +9,16 @@ nav:
 
 ## Params
 
-| 参数        | 说明                     | 类型                         | 默认值 |
-| ----------- | ------------------------ | ---------------------------- | ------ |
-| current     | 必传，当前页数           | `number`                     | `1`    |
-| pageSize    | 必传，每页条数           | `number`                     | `10`   |
-| total       | 必传，总条数             | `number`                     | `0`    |
-| setCurrent  | 必传，设置当前页数的回调 | `(current: number) => void`  | -      |
-| setPageSize | 必传，设置每页条数的回调 | `(pageSize: number) => void` | -      |
-| options     | 可选，分页器配置项       | `TablePaginationConfig`      | -      |
+| 参数    | 说明               | 类型                    | 默认值 |
+| ------- | ------------------ | ----------------------- | ------ |
+| total   | 必传，总条数       | `number`                | `0`    |
+| options | 可选，分页器配置项 | `TablePaginationConfig` | -      |
+
+## Return
+
+| 参数             | 说明                 | 类型                                       |
+| ---------------- | -------------------- | ------------------------------------------ |
+| current          | 当前页数             | `number`                                   |
+| pageSize         | 每页条数             | `number`                                   |
+| pagination       | 分页器配置项         | `TablePaginationConfig`                    |
+| handlePageChange | 页码改变时的回调函数 | `(page: number, pageSize: number) => void` |

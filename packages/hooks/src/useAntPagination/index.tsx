@@ -4,9 +4,11 @@ import {
   SorterResult,
   TableCurrentDataSource,
 } from 'antd/es/table/interface'
-import React, { Dispatch, SetStateAction } from 'react'
+import React, { useState } from 'react'
 
 export interface IGenPaginationReturnType<T> {
+  current: number
+  pageSize: number
   pagination: TablePaginationConfig
   handleTableChange: (
     pagination: TablePaginationConfig,
@@ -17,13 +19,12 @@ export interface IGenPaginationReturnType<T> {
 }
 
 export function useAntPagination<T = any>(
-  current = 1,
-  pageSize = 10,
   total = 0,
-  setCurrent: Dispatch<SetStateAction<number>>,
-  setPageSize: Dispatch<SetStateAction<number>>,
   options?: TablePaginationConfig,
 ): IGenPaginationReturnType<T> {
+  const [current, setCurrent] = useState(1)
+  const [pageSize, setPageSize] = useState(20)
+
   const onChange = (_current?: number, _pageSize?: number) => {
     if (_current && _pageSize) {
       setCurrent(_current)
@@ -47,5 +48,5 @@ export function useAntPagination<T = any>(
     onChange(_pagination.current, _pagination.pageSize)
   }
 
-  return { pagination, handleTableChange }
+  return { current, pageSize, pagination, handleTableChange }
 }
