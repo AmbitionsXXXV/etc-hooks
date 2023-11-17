@@ -1,6 +1,12 @@
 {
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
-  "stylelint.validate": ["css","scss","less","acss"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "stylelint.validate": ["css", "scss", "less", "acss"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
@@ -39,5 +45,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "cSpell.words": ["listview"]
 }
