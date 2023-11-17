@@ -46,6 +46,7 @@ export const menus = [
   {
     title: '进阶工具 hooks',
     children: [
+      { title: 'useAntPagination', link: '/hooks/use-ant-pagination' },
       { title: 'useClipboard', link: '/hooks/use-clipboard' },
       { title: 'useLatest', link: '/hooks/use-latest' },
       { title: 'useMemoizedFn', link: '/hooks/use-memoized-fn' },

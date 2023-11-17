@@ -1,3 +1,4 @@
+import { useAntPagination } from './useAntPagination/index'
 import useBoolean from './useBoolean'
 import useCallbackRef from './useCallbackRef'
 import useClipboard from './useClipboard'
@@ -20,6 +21,7 @@ import useUnmountRef from './useUnmountRef'
 import useUpdate from './useUpdate'
 
 export {
+  useAntPagination,
   useBoolean,
   useCallbackRef,
   useClipboard,
