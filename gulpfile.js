@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const babel = require('gulp-babel')
 const ts = require('gulp-typescript')
 const del = require('del')
+const swc = require('gulp-swc')
 
 // step 1: 如果有对应的产物，此时需要删除 umd cjs esm
 gulp.task('clean', async () => {
@@ -33,7 +34,7 @@ gulp.task('es', () => {
     module: 'ESNext',
   })
 
-  return tsProject.src().pipe(tsProject()).pipe(babel()).pipe(gulp.dest('es/'))
+  return tsProject.src().pipe(tsProject()).pipe(swc()).pipe(gulp.dest('es/'))
 })
 
 // 使用 TypeScript 编译配置文件 tsconfig.pro.json 中指定的 TypeScript 文件，并生成声明文件，然后将它们复制到 es 和 lib 目录下
