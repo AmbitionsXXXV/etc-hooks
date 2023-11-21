@@ -45,6 +45,10 @@ export function useAntPagination<T = any>(
   }
 
   const handleTableChange = (_pagination: TablePaginationConfig) => {
+    if (_pagination.pageSize !== pageSize) {
+      onChange(1, _pagination.pageSize)
+      return
+    }
     onChange(_pagination.current, _pagination.pageSize)
   }
 
