@@ -13,6 +13,7 @@ import useMemoizedFn from './useMemoizedFn'
 import useMount from './useMount'
 import useOs from './useOs'
 import useRequest from './useRequest'
+import useResetState from './useResetState'
 import useSet from './useSet'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
@@ -36,6 +37,7 @@ export {
   useMount,
   useOs,
   useRequest,
+  useResetState,
   useSet,
   useTitle,
   useToggle,

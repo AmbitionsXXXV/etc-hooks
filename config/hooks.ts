@@ -22,6 +22,7 @@ export const menus = [
       { title: 'useBoolean', link: '/hooks/use-boolean' },
       { title: 'useCounter', link: '/hooks/use-counter' },
       { title: 'useDebounce', link: '/hooks/use-debounce' },
+      { title: 'useResetState', link: '/hooks/use-reset-state' },
       { title: 'useSet', link: '/hooks/use-set' },
       { title: 'useToggle', link: '/hooks/use-toggle' },
       { title: 'useUpdate', link: '/hooks/use-update' },
