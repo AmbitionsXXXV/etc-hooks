@@ -6,6 +6,7 @@ export interface CachedData<TData = any, TParams = any> {
   params: TParams
   time: number
 }
+
 interface RecordData extends CachedData {
   timer: Timer | undefined
 }
@@ -46,4 +47,4 @@ const clearCache = (key?: string | string[]) => {
   }
 }
 
-export { getCache, setCache, clearCache }
+export { clearCache, getCache, setCache }

@@ -1,5 +1,5 @@
-import useRequestImplement from './useRequestImplement'
 import { Options, Plugin, Service } from './types'
+import useRequestImplement from './useRequestImplement'
 
 const useRequest = <TData, TParams extends any[]>(
   service: Service<TData, TParams>,

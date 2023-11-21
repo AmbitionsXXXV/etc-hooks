@@ -46,5 +46,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "cSpell.words": ["listview"]
+  "cSpell.words": ["listview", "timespan"]
 }

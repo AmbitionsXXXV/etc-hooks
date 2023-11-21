@@ -1,0 +1,5 @@
+packages/**/*.md
+package.json
+.umi
+.umi-production
+node_modules

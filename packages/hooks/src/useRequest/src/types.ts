@@ -38,6 +38,33 @@ export interface Options<TData, TParams extends any[]> {
   staleTime?: number
   setCache?: (data: CachedData<TData, TParams>) => void
   getCache?: (params: TParams) => CachedData<TData, TParams> | undefined
+
+  // retry
+  retryCount?: number
+  retryInterval?: number
+
+  // ready
+  ready?: boolean
+
+  // debounce
+  debounceWait?: number
+  debounceLeading?: boolean
+  debounceTrailing?: boolean
+  debounceMaxWait?: number
+
+  // throttle
+  throttleWait?: number
+  throttleLeading?: boolean
+  throttleTrailing?: boolean
+
+  // polling
+  pollingInterval?: number
+  pollingWhenHidden?: boolean
+  pollingErrorRetryCount?: number
+
+  // refresh on window focus
+  refreshOnWindowFocus?: boolean
+  focusTimespan?: number
 }
 
 export interface PluginReturn<TData, TParams extends any[]> {
@@ -83,3 +110,5 @@ export interface Result<TData, TParams extends any[]> {
   runAsync: Fetch<TData, TParams>['runAsync']
   mutate: Fetch<TData, TParams>['mutate']
 }
+
+export type Timeout = ReturnType<typeof setTimeout>
