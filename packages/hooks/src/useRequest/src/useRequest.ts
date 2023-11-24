@@ -1,6 +1,7 @@
 import useAutoRunPlugin from './plugins/useAutoRunPlugin'
 import useCachePlugin from './plugins/useCachePlugin'
 import useDebouncePlugin from './plugins/useDebouncePlugin'
+import useLoadingDelayPlugin from './plugins/useLoadingDelayPlugin'
 import usePollingPlugin from './plugins/usePollingPlugin'
 import useRefreshOnWindowFocusPlugin from './plugins/useRefreshOnWindowFocusPlugin'
 import { Options, Plugin, Service } from './types'
@@ -17,6 +18,7 @@ const useRequest = <TData, TParams extends any[]>(
     useAutoRunPlugin,
     usePollingPlugin,
     useDebouncePlugin,
+    useLoadingDelayPlugin,
     useRefreshOnWindowFocusPlugin,
   ] as Array<Plugin<TData, TParams>>)
 }
