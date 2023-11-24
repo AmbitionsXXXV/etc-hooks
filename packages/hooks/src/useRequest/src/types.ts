@@ -73,7 +73,8 @@ export interface PluginReturn<TData, TParams extends any[]> {
         stopNow?: boolean
         returnNow?: boolean
       } & Partial<FetchState<TData, TParams>>)
-    | undefined
+    // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
+    | void
 
   onRequest?: (
     service: Service<TData, TParams>,
