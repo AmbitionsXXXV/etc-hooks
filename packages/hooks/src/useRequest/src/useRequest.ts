@@ -1,4 +1,5 @@
 import useAutoRunPlugin from './plugins/useAutoRunPlugin'
+import useCachePlugin from './plugins/useCachePlugin'
 import useDebouncePlugin from './plugins/useDebouncePlugin'
 import usePollingPlugin from './plugins/usePollingPlugin'
 import useRefreshOnWindowFocusPlugin from './plugins/useRefreshOnWindowFocusPlugin'
@@ -12,6 +13,7 @@ const useRequest = <TData, TParams extends any[]>(
 ) => {
   return useRequestImplement<TData, TParams>(service, options, [
     ...(plugins || []),
+    useCachePlugin,
     useAutoRunPlugin,
     usePollingPlugin,
     useDebouncePlugin,

@@ -1,6 +1,6 @@
-import { FetchState, Options, PluginReturn, Service, Subscribe } from './types'
 import { MutableRefObject } from 'react'
 import { isFunction } from '../../utils'
+import { FetchState, Options, PluginReturn, Service, Subscribe } from './types'
 
 export default class Fetch<TData, TParams extends any[]> {
   count = 0
@@ -148,7 +148,7 @@ export default class Fetch<TData, TParams extends any[]> {
     return Object.assign({}, ...r)
   }
 
-  private setState(s: Partial<FetchState<TData, TParams>> = {}) {
+  setState(s: Partial<FetchState<TData, TParams>> = {}) {
     this.state = {
       ...this.state,
       ...s,
