@@ -20,6 +20,7 @@ import useToggle from './useToggle'
 import useUnmount from './useUnmount'
 import useUnmountRef from './useUnmountRef'
 import useUpdate from './useUpdate'
+import useUpdateEffect from './useUpdateEffect'
 
 export {
   useAntPagination,
@@ -44,4 +45,5 @@ export {
   useUnmount,
   useUnmountRef,
   useUpdate,
+  useUpdateEffect,
 }

@@ -42,6 +42,7 @@ export const menus = [
         title: 'useDebounceFn',
         link: '/hooks/use-debounce-fn',
       },
+      { title: 'useUpdateEffect', link: '/hooks/use-update-effect' },
     ],
   },
   {
