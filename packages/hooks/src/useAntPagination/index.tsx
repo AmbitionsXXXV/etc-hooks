@@ -18,7 +18,7 @@ export interface IGenPaginationReturnType<T> {
   ) => void
 }
 
-export function useAntPagination<T = any>(
+export default function useAntPagination<T = any>(
   total = 0,
   options?: TablePaginationConfig,
 ): IGenPaginationReturnType<T> {
