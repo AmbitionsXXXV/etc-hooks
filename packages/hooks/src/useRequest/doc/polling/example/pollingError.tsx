@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import { Button, message } from 'antd'
 import { useRequest } from 'etc-hooks'
 import Mock from 'mockjs'
@@ -25,7 +26,7 @@ export default () => {
 
   return (
     <>
-      <p>Username: {loading ? 'Loading' : data}</p>
+      <p>Username: {loading ? 'Loading' : (data as string)}</p>
 
       <Button type="primary" onClick={run}>
         start
