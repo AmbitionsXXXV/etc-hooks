@@ -15,6 +15,8 @@ import useOs from './useOs'
 import useRequest from './useRequest'
 import useResetState from './useResetState'
 import useSet from './useSet'
+import useThrottle from './useThrottle/index'
+import useThrottleFn from './useThrottleFn/index'
 import useTitle from './useTitle'
 import useToggle from './useToggle'
 import useUnmount from './useUnmount'
@@ -40,6 +42,8 @@ export {
   useRequest,
   useResetState,
   useSet,
+  useThrottle,
+  useThrottleFn,
   useTitle,
   useToggle,
   useUnmount,

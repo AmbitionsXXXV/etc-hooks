@@ -24,6 +24,7 @@ export const menus = [
       { title: 'useDebounce', link: '/hooks/use-debounce' },
       { title: 'useResetState', link: '/hooks/use-reset-state' },
       { title: 'useSet', link: '/hooks/use-set' },
+      { title: 'useThrottle', link: '/hooks/use-throttle' },
       { title: 'useToggle', link: '/hooks/use-toggle' },
       { title: 'useUpdate', link: '/hooks/use-update' },
     ],
@@ -41,6 +42,10 @@ export const menus = [
       {
         title: 'useDebounceFn',
         link: '/hooks/use-debounce-fn',
+      },
+      {
+        title: 'useThrottleFn',
+        link: '/hooks/use-throttle-fn',
       },
       { title: 'useUpdateEffect', link: '/hooks/use-update-effect' },
     ],
