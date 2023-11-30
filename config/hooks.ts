@@ -5,6 +5,7 @@ export const menus = [
       { title: '快速上手', link: '/hooks/index' },
       { title: '基本用法', link: '/hooks/basic' },
       { title: '防抖', link: '/hooks/debounce' },
+      { title: '轮训', link: '/hooks/polling' },
     ],
   },
   {
