@@ -4,6 +4,7 @@ export const menus = [
     children: [
       { title: '快速上手', link: '/hooks/index' },
       { title: '基本用法', link: '/hooks/basic' },
+      { title: '防抖', link: '/hooks/debounce' },
     ],
   },
   {
