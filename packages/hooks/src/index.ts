@@ -23,6 +23,7 @@ import useUnmount from './useUnmount'
 import useUnmountRef from './useUnmountRef'
 import useUpdate from './useUpdate'
 import useUpdateEffect from './useUpdateEffect'
+import useWindowEvent from './useWindowEvent'
 
 export {
   useAntPagination,
@@ -50,4 +51,5 @@ export {
   useUnmountRef,
   useUpdate,
   useUpdateEffect,
+  useWindowEvent,
 }

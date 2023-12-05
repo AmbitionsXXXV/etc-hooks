@@ -36,6 +36,7 @@ export const menus = [
     children: [
       { title: 'useTitle', link: '/hooks/use-title' },
       { title: 'useColorSchema', link: '/hooks/use-color-schema' },
+      { title: 'useWindowEvent', link: '/hooks/use-window-event' },
     ],
   },
   {
