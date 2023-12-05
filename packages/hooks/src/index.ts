@@ -11,6 +11,7 @@ import useIsomorphicEffect from './useIsomorphicEffect'
 import useLatest from './useLatest'
 import useMemoizedFn from './useMemoizedFn'
 import useMount from './useMount'
+import useNetwork from './useNetwork'
 import useOs from './useOs'
 import useRequest from './useRequest'
 import useResetState from './useResetState'
@@ -39,6 +40,7 @@ export {
   useLatest,
   useMemoizedFn,
   useMount,
+  useNetwork,
   useOs,
   useRequest,
   useResetState,

@@ -60,6 +60,7 @@ export const menus = [
       { title: 'useClipboard', link: '/hooks/use-clipboard' },
       { title: 'useLatest', link: '/hooks/use-latest' },
       { title: 'useMemoizedFn', link: '/hooks/use-memoized-fn' },
+      { title: 'useNetwork', link: '/hooks/use-network' },
       { title: 'useOs', link: '/hooks/use-os' },
     ],
   },
