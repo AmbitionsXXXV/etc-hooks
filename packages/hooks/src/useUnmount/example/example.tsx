@@ -1,10 +1,10 @@
 import { useBoolean, useUnmount } from 'etc-hooks'
-import { message } from 'antd'
 import React from 'react'
+import { toast, Toaster } from 'sonner'
 
 const EtcComponent = () => {
   useUnmount(() => {
-    message.info('Component unmount')
+    toast.info('Component unmount')
   })
 
   return <p>Et cetera!!!</p>
@@ -19,6 +19,8 @@ export default () => {
         {state ? 'unmount' : 'mount'}
       </button>
       {state && <EtcComponent />}
+
+      <Toaster />
     </>
   )
 }

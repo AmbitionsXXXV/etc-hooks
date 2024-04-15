@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { message } from 'antd'
+import { toast } from 'sonner'
 
 const useClipboard = ({ timeout = 2000 } = {}) => {
   const [error, setError] = useState<Error | null>(null)
@@ -19,7 +19,7 @@ const useClipboard = ({ timeout = 2000 } = {}) => {
         .writeText(valueToCopy)
         .then(() => {
           handleCopyResult(true)
-          message.success('已复制到剪贴板')
+          toast.success('已复制到剪贴板')
         })
         .catch((err) => setError(err))
     } else {
